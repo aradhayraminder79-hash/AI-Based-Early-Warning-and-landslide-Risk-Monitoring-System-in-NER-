@@ -1,0 +1,2 @@
+# AI-Based-Early-Warning-and-landslide-Risk-Monitoring-System-in-NER-
+AI-powered real-time landslide monitoring and early-warning system for Northeast India. It analyzes rainfall, soil moisture, satellite, terrain, and historical data to predict high-risk zones, visualize risks on GIS maps, track roads/infrastructure, and send multilingual alerts. Citizens can upload geo-tagged reports for faster response.
