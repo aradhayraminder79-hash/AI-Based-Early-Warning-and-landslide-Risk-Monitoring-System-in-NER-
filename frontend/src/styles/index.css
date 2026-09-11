@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0c1a24;
+  --bg-elevated: #112531;
+  --surface: #15303f;
+  --surface-hover: #1a3a4c;
+  --border: #234454;
+  --border-soft: #1b3644;
+
+  --text-primary: #e9f2f5;
+  --text-secondary: #8ba7b5;
+  --text-muted: #5e7a87;
+
+  --teal: #2ec4b6;
+  --teal-soft: rgba(46, 196, 182, 0.14);
+  --amber: #f4a300;
+  --amber-soft: rgba(244, 163, 0, 0.14);
+  --orange: #ff6b35;
+  --orange-soft: rgba(255, 107, 53, 0.14);
+  --red: #e63946;
+  --red-soft: rgba(230, 57, 70, 0.16);
+
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(46, 196, 182, 0.06), transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(244, 163, 0, 0.05), transparent 40%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0; }
+
+a { color: var(--teal); }
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--teal-soft);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 8px; }
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
